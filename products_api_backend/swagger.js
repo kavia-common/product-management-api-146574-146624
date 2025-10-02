@@ -4,10 +4,14 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'My Express API',
+      title: 'Products API - Ocean Professional',
       version: '1.0.0',
-      description: 'A simple Express API documented with Swagger',
-    }
+      description: 'Modern, minimalist REST API for managing products (id, name, price, quantity).',
+    },
+    tags: [
+      { name: 'Health', description: 'Service health check' },
+      { name: 'Products', description: 'Product management endpoints' },
+    ],
   },
   apis: ['./src/routes/*.js'], // Path to the API docs
 };
